@@ -1,0 +1,45 @@
+#player-naming {
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  color: white;
+  background:linear-gradient(45deg,rgb(32, 31, 31),rgb(17, 1, 16));
+  align-items: center;
+  display:flex;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 0px rgb(182, 129, 219);
+  /* display: none; */
+  text-align: center;
+
+}
+
+#player-naming ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+#player-naming li{
+  padding: 8px;
+}
+
+#player-naming input{
+  display: block;
+  background-color: rgb(35, 26, 39);
+  color: white;
+}
+
+#backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.7);
+    /* display: none; */
+}
+
+@media(max-width:768px){
+  #player-naming{
+    left: 3.1rem;
+  }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tick Tac Toe</title>
+    <link href="overlay.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="backdrop"></div>
+      <div id="player-naming">
+        <ul>
+          <li>
+            <label for="player1-name">Enter Player-1 Name</label>
+            <input id="player1-name"  type="text" maxlength="10" />    
+          </li>
+          <li>
+            <label for="player2-name">Enter Player-2 Name</label>
+            <input id="player2-name" type="text" maxlength="10" />
+          </li>
+          <li>
+            <div id="submit-btn">Start Game</div>
+          </li>
+        </ul>
+      
+      </div>
+
+        <div class="player-card" id="player-1">
+          <strong>Player 1</strong>
+          <p class="player-name" id="player-card-name-1">Name</p>
+          <p class="player-weapon">X</p>
+        </div>
+
+        <div id="player-arena">
+          <!-- <div id="btn-zone"><div id="start-btn">Start New Game</div></div> -->
+          <div id="playing-zone">
+            <div id="box-1" class="tile"></div>
+            <div id="box-2" class="tile"></div>
+            <div id="box-3" class="tile"></div>
+            <div id="box-4" class="tile"></div>
+            <div id="box-5" class="tile"></div>
+            <div id="box-6" class="tile"></div>
+            <div id="box-7" class="tile"></div>
+            <div id="box-8" class="tile"></div>
+            <div id="box-9" class="tile"></div>
+          </div>
+        </div>
+        <div class="player-card" id="player-2">
+          <strong>Player 2</strong>
+          <p class="player-name" id="player-card-name-2">Name</p>
+          <p class="player-weapon">O</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
