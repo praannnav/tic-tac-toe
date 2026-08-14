@@ -10,23 +10,26 @@
   </head>
   <body>
     <div id="main">
-      <div id="backdrop"></div>
-      <div id="player-naming">
-        <ul>
-          <li>
-            <label for="player1-name">Enter Player-1 Name</label>
-            <input id="player1-name"  type="text" maxlength="10" />    
-          </li>
-          <li>
-            <label for="player2-name">Enter Player-2 Name</label>
-            <input id="player2-name" type="text" maxlength="10" />
-          </li>
-          <li>
-            <div id="submit-btn">Start Game</div>
-          </li>
-        </ul>
-      
-      </div>
+        <div id="backdrop"></div>
+
+        <div id="player-naming">
+          <ul>
+            <li>
+              <label for="player1-name">Enter Player-1 Name</label>
+              <input id="player1-name"  type="text" maxlength="10" />    
+            </li>
+            <li>
+              <label for="player2-name">Enter Player-2 Name</label>
+              <input id="player2-name" type="text" maxlength="10" />
+            </li>
+            <li>
+              <div id="submit-btn">Start Game</div>
+            </li>
+          </ul>
+        
+        </div>
+
+
 
         <div class="player-card" id="player-1">
           <strong>Player 1</strong>
@@ -54,6 +57,16 @@
           <p class="player-weapon">O</p>
         </div>
       </div>
+      <div id="winner-board">
+        <ul>
+          <li>
+            <p id="winner-name"></p>
+          </li>
+          <li>
+            <div id="Re-Start">Restart Game</div>
+          </li>
+        </ul>
+      </div>          
     </div>
   </body>
 </html>
