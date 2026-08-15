@@ -30,7 +30,7 @@ let winningPatttern = [
   [0, 4, 8],
   [2, 4, 6],
 ];
-
+const sound=new Audio("sound.mp3")
 function gameStarts(event) {
   let playersData = {
     player1Name: document.querySelector("#player-card-name-1"),
@@ -75,6 +75,7 @@ function cursor(event) {
       cells[b].innerHTML === cells[c].innerHTML
     ) {
       console.log("Winner winner chicken dinnnnnner");
+      sound.play();
       blackOverlay.style.display = "block";
       displayWinner.style.display = "block";
       // winner.innerHTML=pastplayer+" Wins"
@@ -110,6 +111,7 @@ function isMatchDraw() {
     }
   }
   if (draw) {
+    sound.play()
     blackOverlay.style.display = "block";
     displayWinner.style.display = "block";
     winner.innerHTML = "Draw 😶";
